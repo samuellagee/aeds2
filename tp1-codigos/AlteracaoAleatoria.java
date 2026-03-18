@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class AlteracaoAleatoria {
 
+//cria dois caracteres aleatorios, passa pela string recebida, detecta quando o primeiro caracter randomizado aparecer e concatena na string trocada com o segundo caracter randomizado, se nao achar o caracter, apenas concatena com o caracter lido 
 	public static String sorteio(String s, Random gerador) {
 		String trocada = "";
 		char l1 = ((char)('a' + (Math.abs(gerador.nextInt()) % 26)));

@@ -3,6 +3,7 @@ import java.util.Scanner;
 class CiframentoCesar{
 	public static Scanner sc = new Scanner(System.in);
 
+//funçao que usa a tabela ascii como referencia, diminui o caracter lido pela numeraçao de a que dara o numero daquele caracter, soma 3 para avançar os caracteres e o resto da divisao por 26 dara a numeraçao do caracter desejado
 	public static String cifrar(String p){
 		String cifrada = "";
 		for(int i = 0; i < p.length(); i++){
