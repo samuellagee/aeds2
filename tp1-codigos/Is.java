@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 class Is{
 
+//verifica se é composta so por vogais
 	public static boolean vogal(String p){
 		boolean resp = true;
 		for(int i = 0; i < p.length(); i++){
@@ -12,6 +13,7 @@ class Is{
 		return resp;
 	}
 
+//verifica se existe vogais na string
 	public static boolean consoante(String p){
 		boolean resp = true;
 		for(int i = 0; i < p.length(); i++){
@@ -23,6 +25,7 @@ class Is{
 		return resp;
 	}
 
+//verifica se contem numero inteiros negativos e positivos
 	public static boolean inteiro(String p){
 		boolean resp = true;
 		int i = 0;
@@ -38,6 +41,7 @@ class Is{
 		return resp;
 	}
 
+//verifica se o numero é real, lendo se existem pontos ou virgulas
 	public static boolean real(String p){
 		boolean resp = true;
 		int ponto = 0;
@@ -53,7 +57,7 @@ class Is{
 		for(; i < p.length(); i++){
 			char c = p.charAt(i);
 
-			if(c == '.'){
+			if(c == '.' || c == ','){
 				ponto++;
 				if(ponto > 1) resp = false; 
 			} else if(c < '0' || c > '9'){ 

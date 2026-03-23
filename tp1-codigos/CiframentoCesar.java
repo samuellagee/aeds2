@@ -8,10 +8,8 @@ class CiframentoCesar{
 		String cifrada = "";
 		for(int i = 0; i < p.length(); i++){
 			char c = (char)(p.charAt(i));
-				if(c >= 'a' && c <= 'z'){
-					c = (char)('a' + (c - 'a'+ 3)%26);
-				}else if(c >= 'A' && c <= 'Z'){
-					c = (char)('A' + (c - 'A'+ 3)%26);
+				if(c >= ' ' && c <= '~'){
+					c = (char)(' ' + (c - ' '+ 3)%127);
 				}
 			cifrada = cifrada + c;
 		}

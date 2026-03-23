@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//funçao declarada como ponteiro para retornar a string invertida, onde é criado uma nova string que armazena os caracteres da string lida do ultimo ao primeiro
 char *inverter(char s[]){
 	int n = 0;
 	while(s[n] != '\0'){
