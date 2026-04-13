@@ -7,10 +7,7 @@ class CiframentoCesar{
 	public static String cifrar(String p){
 		String cifrada = "";
 		for(int i = 0; i < p.length(); i++){
-			char c = (char)(p.charAt(i));
-				if(c >= ' ' && c <= '~'){
-					c = (char)(' ' + (c - ' '+ 3)%127);
-				}
+			char c = (char)(p.charAt(i) + 3);
 			cifrada = cifrada + c;
 		}
 		return cifrada;

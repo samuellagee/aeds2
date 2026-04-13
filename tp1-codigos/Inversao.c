@@ -19,12 +19,12 @@ char *inverter(char s[]){
 
 int main(){
 	char s[1000];
-	scanf(" %s", s);
+	scanf(" %[^\n]", s);
 
 	while(!(s[0] == 'F' && s[1] == 'I' && s[2] == 'M')){
 		char *resp = inverter(s);
 		printf("%s\n", resp);
-		scanf(" %s", s);
+		scanf(" %[^\n]", s);
 	}
 
 	return 0;

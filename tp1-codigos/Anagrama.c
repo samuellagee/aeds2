@@ -46,9 +46,9 @@ int main(){
 	char s1[1000], s2[1000];
 	
 	while(scanf(" %s", s1) == 1 && !(s1[0] == 'F' && s1[1] == 'I' && s1[2] == 'M' && s1[3] == '\0')){
-		scanf(" - %s", s2);
+		scanf(" %s", s2);
 		if(Anagrama(s1, s2) == 1) printf("SIM\n");
-		else printf("NÃO\n");
+		else printf("NAO\n");
 	}
 	return 0;
 }

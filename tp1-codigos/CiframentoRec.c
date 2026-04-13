@@ -11,11 +11,13 @@ char *cifrada(char p[], int i){
 
 int main(){
 	char p[1000];	
-	scanf(" %[^\n]", p);
+	fgets(p, 1000, stdin);
 
-	while(!(p[0] == 'F' && p[1] == 'I' && p[2] == 'M' && p[3] == '\0')){
-		printf("%s\n", cifrada(p, 0));
-		scanf(" %[^\n]", p);
+	while(!(p[0] == 'F' && p[1] == 'I' && p[2] == 'M' && p[3] == '\n')){
+		if(p[0] == '\n') printf("\n");
+		else printf("%s\n", cifrada(p, 0));
+		
+		fgets(p, 1000, stdin);
 	}
 
 	return 0;

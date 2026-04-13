@@ -7,27 +7,11 @@ int soma(int n){
 	else return soma(n/10) + n%10;
 }
 
-//como na entrada a condiçao de parada é FIM, apos ler como um char e entrar no laço, converte a string para um numero inteiro, usando a tabela ASCII, pois o numero em forma de caracter subtraido do caracter '0' dara o valor do numero inteiro
-int transformar(char p[]){
-	int n = 0;
-	int i = 0;
-	while(p[i] != '\0'){
-		n = n * 10 + (p[i] - '0');
-		i++;
-}
-
-	return n;
-}
-
 int main(){
-	char p[100];
-	scanf(" %s", p);
+	int num;
 
-	while(!(p[0] == 'F' && p[1] == 'I' && p[2] == 'M')){
-		int n = transformar(p);
-		
-		printf("%d\n", soma(n));
-		scanf(" %s", p);
+	while(scanf("%d", &num) != EOF){
+		printf("%d\n", soma(num));
 	}
 
 	return 0;
