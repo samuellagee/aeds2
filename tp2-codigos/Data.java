@@ -11,7 +11,15 @@ public class Data{
 		this.ano = ano;
 	}
 
-	//gets
+	public int getDia(){
+		return dia;
+	}
+	public int getMes(){
+		return mes;
+	}
+	public int getAno(){
+		return ano;
+	}
 	
 
 	public static Data parseData(String d){

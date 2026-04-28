@@ -9,6 +9,13 @@ public class Hora{
 		this.min = min;
 	}
 
+	public int getHora(){
+		return hora;
+	}
+	public int getMin(){
+		return min;
+	}
+
 	public static Hora parseHora(String h){
 		Scanner sc = new Scanner(h);
 		sc.useDelimiter(":");
